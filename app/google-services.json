@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "208312271305",
+    "project_id": "ashoka-4b5e7",
+    "storage_bucket": "ashoka-4b5e7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:208312271305:android:4bf1541abf0cced244a818",
+        "android_client_info": {
+          "package_name": "com.example.ashokadocs"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDoHCiTAtFYy2EEmG05lf9VxO-kJMU1ED0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
