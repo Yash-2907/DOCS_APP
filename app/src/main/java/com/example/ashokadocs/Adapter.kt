@@ -22,7 +22,6 @@ class Adapter(private val userList: ArrayList<docs>) : RecyclerView.Adapter<Adap
     override fun getItemCount(): Int {
         return userList.size
     }
-
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
 
         val currentitem=userList[position]
@@ -39,7 +38,7 @@ class Adapter(private val userList: ArrayList<docs>) : RecyclerView.Adapter<Adap
         val heading: TextView= itemView.findViewById(R.id.titlebox)
         val copylink: ImageButton= itemView.findViewById(R.id.linkbtn)
         val status: ImageButton= itemView.findViewById(R.id.graphbtn)
-        val download: TextView= itemView.findViewById(R.id.downloadbtn)
+        val download: ImageButton= itemView.findViewById(R.id.downloadbtn)
         val Image:ImageView=itemView.findViewById(R.id.imagebox)
 
     }
