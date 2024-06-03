@@ -35,7 +35,7 @@
                 android:id="@+id/imagebox"
                 android:layout_width="match_parent"
                 android:layout_height="180dp"
-                android:background="@drawable/img">
+                android:background="@color/white">
 
             </ImageView>
 

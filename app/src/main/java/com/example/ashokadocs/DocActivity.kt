@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.ImageButton
+import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -44,7 +45,29 @@ class DocActivity : AppCompatActivity() {
                         userArrayList.add(user!!)
 
                     }
-                    userRecyclerview.adapter=Adapter(userArrayList)
+
+                    var adap =Adapter(userArrayList)
+                    userRecyclerview.adapter=adap
+                    adap.setOnItemClickListener(object : Adapter.onItemClickListener{
+                        override fun onCpyClick(position: Int, oper: Int) {
+                            val currbox= userArrayList[position]
+
+                            if(oper == 0)
+                            {
+                                Toast.makeText(this@DocActivity, "Copies :- ${currbox.Link}", Toast.LENGTH_SHORT).show()
+                            }
+                            else if(oper == 1)
+                            {
+                                Toast.makeText(this@DocActivity, "Downloads :- ${currbox.Drive}", Toast.LENGTH_SHORT).show()
+                            }
+                            else if(oper == 2)
+                            {
+                                Toast.makeText(this@DocActivity, "Status :- ${currbox.Status}", Toast.LENGTH_SHORT).show()
+                            }
+                        }
+
+
+                    })
                 }
             }
 
